@@ -101,6 +101,24 @@
     background:linear-gradient(90deg, var(--blue), var(--red));
     transition:width .35s ease;
   }
+  .yt-sub{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    background:#ff0000;
+    color:#fff;
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:600;
+    font-size:13px;
+    text-decoration:none;
+    border-radius:9px;
+    padding:8px 13px;
+    white-space:nowrap;
+    transition:filter .15s, transform .1s;
+  }
+  .yt-sub svg{ width:16px; height:16px; flex:none; }
+  .yt-sub:hover{ filter:brightness(1.08); }
+  .yt-sub:active{ transform:scale(0.96); }
 
   .controls{
     display:flex;
@@ -313,6 +331,10 @@
         <div class="count"><span id="placedCount">0</span>/100<small>peças</small></div>
         <div class="bar"><div id="barFill"></div></div>
       </div>
+      <a class="yt-sub" href="https://www.youtube.com/@CuboaoQuadrado" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12l-6.2 3.6Z"/></svg>
+        Inscreva-se
+      </a>
     </div>
   </header>
 
